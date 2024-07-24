@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRide: Revolutionizing Urban Cycling</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EcoRide: Revolutionizing Urban Cycling</h1>
+        <img src="https://placeholder.com/banner-image.jpg" alt="EcoRide Application Banner">
+    </header>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>EcoRide is a web and mobile application designed to promote eco-friendly urban transportation by helping cyclists find the safest and most efficient routes in busy city environments. Our team, consisting of myself (Alex Chen), Maria Rodriguez, and Jamal Thompson, developed this project over an intensive 8-week period from May 25 to July 20, 2024.</p>
+        <p>As the lead frontend developer, my personal focus was on creating an intuitive, responsive user interface that works seamlessly across both web and mobile platforms. Maria handled our backend infrastructure and API integrations, while Jamal focused on our machine learning algorithms for route optimization.</p>
+        <p>EcoRide was created for urban commuters and recreational cyclists who want to reduce their carbon footprint while navigating through complex city landscapes efficiently and safely.</p>
+    </section>
+
+    <section id="personal-story">
+        <h2>Why I Chose This Project</h2>
+        <p>My journey with EcoRide began long before I wrote my first line of code for the project. Growing up in a bustling metropolis, I always struggled with the chaos of urban transportation. Cars dominated the streets, making cycling seem like a death wish rather than a viable commuting option.</p>
+        <p>One day, during my college years, I decided to brave the city streets on my old, rusty bicycle. What should have been a 15-minute ride to campus turned into a 45-minute ordeal of wrong turns, busy intersections, and near misses with aggressive drivers. I arrived at my destination sweaty, stressed, and convinced there had to be a better way.</p>
+        <p>This experience stuck with me throughout my early career in tech. When the opportunity arose to create a final project, I knew immediately that I wanted to tackle the challenge of making urban cycling accessible, safe, and enjoyable for everyone. EcoRide isn't just an app for me; it's a step towards transforming our cities into more livable, breathable spaces.</p>
+    </section>
+
+    <section id="accomplishments">
+        <h2>Project Accomplishments</h2>
+        <img src="https://placeholder.com/architecture-diagram.png" alt="EcoRide Architecture Diagram">
+        <p>We built EcoRide using a modern, scalable tech stack:</p>
+        <ul>
+            <li>Frontend: React.js with React Native for cross-platform compatibility. We chose this to ensure a consistent user experience across web and mobile platforms while maintaining a single codebase.</li>
+            <li>Backend: Node.js with Express, leveraging its event-driven architecture for handling real-time route updates and user interactions efficiently.</li>
+            <li>Database: MongoDB for its flexibility in handling complex geospatial data and user profiles.</li>
+            <li>APIs: Google Maps API for base mapping functionality, and OpenStreetMap for additional cycling-specific data.</li>
+            <li>Machine Learning: Python with TensorFlow for our route optimization algorithms, allowing us to consider multiple factors like safety, elevation, and air quality.</li>
+        </ul>
+        <p>Key features we've implemented include:</p>
+        <ol>
+            <li>Intelligent Route Planning: Our algorithm considers factors like bike lanes, traffic patterns, air quality, and elevation to suggest the optimal route for each user.</li>
+            <li>Real-time Hazard Alerts: Users can report and receive notifications about temporary obstacles, construction, or dangerous areas along their route.</li>
+            <li>Eco Impact Tracker: A gamified system that calculates and displays the positive environmental impact of choosing to cycle over driving.</li>
+        </ol>
+    </section>
+
+    <section id="technical-challenge">
+        <h2>Overcoming Technical Challenges</h2>
+        <p>The most significant hurdle we faced was integrating real-time data into our route planning algorithm without compromising application performance. Initially, our app would slow to a crawl whenever it needed to recalculate a route based on new hazard reports or traffic updates.</p>
+        <p>To address this, we implemented a multi-tiered caching system using Redis. We cached frequently requested routes and created a separate cache for real-time data. When a user requests a route, we first check if a cached version exists. If it does, we quickly return this route while simultaneously triggering a background process to validate it against our real-time data cache.</p>
+        <p>If any significant changes are detected, we use Web Sockets to push an updated route to the user's device. This approach allowed us to reduce initial route calculation times by 80% while still ensuring users have access to the most up-to-date information.</p>
+        <p>Implementing this system required a deep dive into caching strategies and real-time communication protocols. We spent two weeks refining our approach, conducting A/B tests with beta users to fine-tune the balance between speed and accuracy. The result is a system that feels instantaneous to the user while still providing reliable, current information.</p>
+    </section>
+
+    <section id="lessons-learned">
+        <h2>Lessons Learned</h2>
+        <p>This project has been an incredible learning experience, both technically and personally. Here are some key takeaways:</p>
+        <ul>
+            <li>The importance of user-centric design: Our early prototypes were technically impressive but unintuitive. Regular user testing sessions helped us refine our UI/UX to better meet cyclist needs.</li>
+            <li>The power of data optimization: Properly structuring and caching our data made the difference between a sluggish app and a responsive one.</li>
+            <li>The value of cross-functional teams: Having team members with diverse skills allowed us to approach problems from multiple angles.</li>
+        </ul>
+        <p>If I were to start over, I would allocate more time for initial user research. Some of our assumptions about user behavior didn't hold up in real-world testing, leading to late-stage pivots that could have been avoided.</p>
+        <p>As an engineer, I've learned that I thrive when working on projects with tangible real-world impact. The challenge of balancing technical constraints with user needs has confirmed my passion for full-stack development.</p>
+        <p>Moving forward, I'm excited to further explore the intersection of technology and urban planning. EcoRide has opened my eyes to the potential of smart city initiatives, and I'm eager to contribute to more projects in this space.</p>
+    </section>
+
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>I'm Axh, a full-stack developer passionate about using technology to create more livable, sustainable cities. When I'm not coding, you can find me exploring urban bike trails or volunteering at local tech education initiatives.</p>
+        <ul>
+        </ul>
+    </section>
+</body>
+</html>
